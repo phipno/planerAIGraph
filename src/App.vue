@@ -1,11 +1,11 @@
 <script>
 import Filters from './components/Filters.vue';
-import Graph from './components/Graph.vue';
+import BarChart from './components/BarChart.vue';
 
 export default {
   components: {
     Filters,
-    Graph,
+    BarChart,
   },
   data() {
     return {
@@ -41,10 +41,8 @@ export default {
   .app-container {
     width: 800px;
     position: flex;
-    margin-top: 10vh;
     margin-left: calc((100% - 60%) / 2);
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Set container height to 100% of viewport height */
+    height: 450px;
   }
 </style>
