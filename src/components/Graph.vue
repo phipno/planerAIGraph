@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="graph-container">
     <h2>Data Graph</h2>
     <!-- Placeholder for the graph (using some basic styles) -->
     <div class="graph-placeholder">
@@ -18,9 +18,15 @@ export default {
 </script>
 
 <style>
+
+.graph-container {
+  width: 100%;
+  height: 400px;
+}
+
 .graph-placeholder {
   width: 100%;
-  height: 300px;
+  height: 100%;
   background-color: #f0f0f0;
   display: flex;
   align-items: center;

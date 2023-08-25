@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="filter-container">
     <select v-model="selectedStore">
       <option value="">All Stores</option>
       <option value="Store A">Store A</option>
@@ -40,3 +40,11 @@ export default {
   },
 };
 </script>
+
+<style>
+ .filter-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ }
+</style>

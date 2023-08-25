@@ -31,8 +31,20 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="app-container">
     <Filters @filter-change="handleFilterChange" />
     <Graph :data="filteredData" />
   </div>
 </template>
+
+<style>
+  .app-container {
+    width: 800px;
+    position: flex;
+    margin-top: 10vh;
+    margin-left: calc((100% - 60%) / 2);
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set container height to 100% of viewport height */
+  }
+</style>
